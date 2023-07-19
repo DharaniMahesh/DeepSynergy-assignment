@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Merriweather:wght@400;700;900&family=Montserrat:wght@400;800;900&family=Pacifico&family=Plus+Jakarta+Sans:wght@400;500&family=Sacramento&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600&display=swap" rel="stylesheet">  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h6>CONTACT</h6>
+    <h1>Let's connect</h1>
+    <div class="text-center">
+        <p class="text-size-medium text-weight-medium">Please fill out the form below and we'll reach out right away.</p>
+    </div>
+    <form>
+        <div class="row g-3">
+            <div class="form-group col-md-6">
+              <label for="firstName">First Name<span>*</span></label>
+              <input type="text" class="form-control" id="firstName" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="lastName">Last Name<span>*</span></label>
+              <input type="text" class="form-control" id="lastName" required>
+            </div>
+        </div>
+      <div class="row g-3">
+        <div class="form-group col-md-6 mb-3">
+          <label for="email">Email<span>*</span></label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <label for="companyName">Company Name<span>*</span></label>
+          <input type="text" class="form-control" id="companyName" required>
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="form-group col-md-6 mb-3">
+          <label for="jobTitle">Job Title<span>*</span></label>
+          <input type="text" class="form-control" id="jobTitle" required>
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <label for="likeTo">I'd Like To<span>*</span></label>
+          <select class="form-select form-control" aria-label="Please select" required>
+            <option  disabled selected value="">Please select</option>
+            <option value="1">Finance my tech stack</option>
+            <option value="2">Offer contract financing to my customers</option>
+            <option value="3">Something else</option>
+          </select>
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="form-group col-12 mb-3">
+            <label for="hearAboutUs">How Did You Hear About Us?<span>*</span></label>
+            <input type="text" class="form-control" id="hearAboutUs" required>
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="form-group col-12 mb-3">
+            <label for="additionalInfo">Anything Else You'd Like Us to Know?</label>
+            <input type="text" class="form-control" id="additionalInfo">
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <button type="submit" class="btn btn-info btn-lg"><span style="font-size: 1.15rem; text-align:center; color:black; font-family: 'Plus Jakarta Sans', sans-serif;">Submit</span></button>
+    </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
